@@ -1,0 +1,35 @@
+//let score = "33abc"
+//let score = null
+//let score = undefined
+// let score = true // boolean 1/0
+//let score = "rishabh" //string Nan
+
+
+// console.log(typeof score)
+// console.log(typeof(score))
+
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber)
+// console.log(valueInNumber)
+
+ // here score is not a number
+ // but when we assign the score as number 
+ // show as the NaN NOT A NUMBER 
+
+
+
+//let isLoggedIn = 1
+//let isLoggedIn = 0
+//let isLoggedIn = ""
+// let isLoggedIn = "Rishabh"
+// let booleanIsLoggedIn  = Boolean(isLoggedIn)
+// console.log(booleanIsLoggedIn);
+
+
+
+
+let value  =33
+let stringnumber = String (value)
+console.log(stringnumber);
+console.log(typeof stringnumber);
+
