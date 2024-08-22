@@ -1,3 +1,4 @@
+// ---------conversions------------
 //let score = "33abc"
 //let score = null
 //let score = undefined
@@ -28,8 +29,25 @@
 
 
 
-let value  =33
-let stringnumber = String (value)
-console.log(stringnumber);
-console.log(typeof stringnumber);
+// let value  =33
+// let stringnumber = String (value)
+// console.log(stringnumber);
+// console.log(typeof stringnumber);
+
+//-----------operations-----------------------
+
+let value = 6
+let negvalue = -value
+console.log(negvalue);
+
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2/2);
+console.log(2**3)
+console.log(2%2)
+
+
+
+
 
