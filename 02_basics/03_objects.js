@@ -60,3 +60,4 @@ console.log(JSuser.greetingtwo());
 /* usually we access objects using dot operator
 but in some cases we use square bracket
 */
+ 
