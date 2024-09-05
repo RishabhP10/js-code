@@ -65,13 +65,65 @@ and when we pass the value those are called arguments
 // because after the retrun in function nothing got printed
 
 
-function loginUserMessage(username = "USER"){
-    if(username === undefined) /*(!username)*/ {
-        console.log("Please Enter User Name");
-        return
+// function loginUserMessage(username = "USER"){
+//     if(username === undefined) /*(!username)*/ {
+//         console.log("Please Enter User Name");
+//         return
         
-    }
-    return `${username} just logged in`
+//     }
+//     return `${username} just logged in`
+// }
+// console.log(loginUserMessage("Rishabh"))
+// console.log(loginUserMessage())
+
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(20));
+
+
+// to create a bundle of the prices
+// REST OPERATOR
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(20,200,2000));
+
+// function calculateCartPrice(val1, val2 ,...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(20,200,300,2000));
+
+
+
+const user = {
+    username : "Rishabh",
+    price : 111
+    //prices : 111
 }
-console.log(loginUserMessage("Rishabh"))
-console.log(loginUserMessage())
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username}
+        and Price is ${anyobject.price}`);
+    
+
+}
+
+// handleObject(user)
+handleObject({
+    username: "Rakesh",
+    price : 888
+})
+
+
+const myNewArray = [200,800,900,700]
+
+
+function returnSecondValue(getArray){
+    return getArray[0]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([280,300,900,8000]
+));
