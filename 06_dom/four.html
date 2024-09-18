@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+function addLanguage(langname){
+        const li = document.createElement('li')
+        li.innerHTML = `${langname}`
+        document.querySelector('.language')
+        .appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+    /* here what problem is , right now only one value is there
+    if there is lakhs value so every time to append 
+    the value have to triverse through all the values
+    for optimization purpose it is not a good practice */
+
+
+    function addOptimizationLanguage(langName){
+        const li  =document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language')
+        .appendChild(li)
+    }
+    addOptimizationLanguage("CPP")
+    addOptimizationLanguage("Ruby")
+
+
+    // Edit the values
+    // select the value
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "MOJO"
+    // not optimize
+
+    const newli = document.createElement('li')
+    newli.textContent = "MOJO"
+    secondlang.replaceWith(newli)
+
+    // edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>React</li>'
+
+
+    //remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+</script>
+
+</html>
