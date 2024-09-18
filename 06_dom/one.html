@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color:#212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class = "bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Document Object Model <span style="display: none;">Test Text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <input type="password" name = "" id="">
+        <ul>
+            <li class="list-item" >one</li>
+            <li class="list-item" >two</li>
+            <li class="list-item" >three</li>
+            <li class="list-item" >four</li>
+            <li class="list-item" >five</li>
+            <li class="list-item" >six</li>
+            
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- document.getElementById
+ƒ getElementById() { [native code] }
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.getElementById('title').id
+'title'
+document.getElementById('title').className
+'heading'
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class','text)
+VM578:1 Uncaught SyntaxError: Invalid or unexpected tokenUnderstand this error
+document.getElementById('title').setAttribute('class','text')
+undefined
+document.getElementById('title').setAttribute('class','text','heading')
+undefined
+const title = document.getElementById('title')
+undefined
+title
+<h1 id=​"title" class=​"text">​…​</h1>​
+title.style.backgroundColor = "red"
+'red'
+title.style.borderRadius = "20px"
+title.style.padding = "15px"
+ -->
+
+
+
+ <!-- innertext textcontext innerHtml -->
+
+ <!-- title.innerHTML
+'DOM Document Object Model <span style="display: none;">Test Text</span>'
+title.innerText
+'DOM Document Object Model'
+title.textContent
+'DOM Document Object Model Test Text' -->
