@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "Main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title","generate title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+
+// till now div is not on page , its on memory 
+// now we have to attach to the page
+
+    // div.innerText = "Rishabh"
+    // then we print , but with that we loose the optimization
+    // take a refrence then overwrite 
+    // problem with optimization
+
+    const addText = document.createTextNode("Rishabh Pathak")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+</script>
+</html>
