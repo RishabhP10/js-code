@@ -66,3 +66,17 @@ form.addEventListener('submit', function (e) {
 
 
 ```
+
+## Project 3
+```javascript
+// set the local time---
+const clock = document.querySelector('#clock');
+// remember the syntex
+/* setInterval is a function where code run in every interval , (function, time(inMiliSec)) */
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
