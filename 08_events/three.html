@@ -1,3 +1,6 @@
+<!-- make a program to print random date  with name , when you start generate random value and 
+when you stop it stop the value -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +14,24 @@
     <button id="start">Start</button>
 </body>
 <script>
-    const SayDate = function(){
-        console.log("Rishabh",Date.now());
-        
+    let intervalID
+    const startrandomvalue = function(){
+        intervalID = setInterval(generator,1000)
+        function generator(){
+            console.log("Rishabh",Date.now());
+        }
+
+
     }
-    // setInterval(SayDate,1000,"Pathak")
-    // clearInterval(intervslID)
+    const stoprandomvalue = function(){
+        clearInterval(intervalID);
+    }
 
     document.querySelector('#start').addEventListener('click',function(){
-       setInterval(SayDate)
+       startrandomvalue()
     })
     document.querySelector('#stop').addEventListener('click',function(){
-       clearInterval(SayDate)
+        stoprandomvalue()
     })
 </script>
 </html>
